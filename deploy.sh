@@ -63,7 +63,7 @@ register_definition() {
 
 deploy_cluster() {
 
-    host_port=80
+    host_port=8083
     family="circleCI-task-family"
 
     make_task_def
