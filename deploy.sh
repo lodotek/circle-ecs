@@ -20,27 +20,11 @@ make_task_def() {
 
     task_template='[
 	{
-	    "name": "uwsgi",
+	    "name": "sapho",
 	    "image": "lodotek/circleci-ecs:%s",
 	    "essential": true,
-	    "memory": 200,
-	    "cpu": 10
-	},
-	{
-	    "name": "nginx",
-	    "links": [
-		"uwsgi"
-	    ],
-	    "image": "bellkev/nginx-base:stable",
-	    "portMappings": [
-		{
-		    "containerPort": 8000,
-		    "hostPort": %s
-		}
-	    ],
-	    "cpu": 10,
-	    "memory": 200,
-	    "essential": true
+	    "memory": 2050,
+	    "cpu": 100
 	}
     ]'
 
