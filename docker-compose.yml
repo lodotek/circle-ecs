@@ -1,8 +1,0 @@
-uwsgi:
-  image: "lodotek/circleci-ecs:${CIRCLE_SHA1}"
-nginx:
-  image: bellkev/nginx-base:stable
-  links:
-    - uwsgi
-  ports:
-   - "8000:8000"
