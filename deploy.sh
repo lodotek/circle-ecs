@@ -64,7 +64,7 @@ register_definition() {
 deploy_cluster() {
 
     host_port=80
-    family="circleCI"
+    family="circleCI-task-family"
 
     make_task_def
     register_definition
